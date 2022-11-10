@@ -17,6 +17,20 @@ This program...
 double length(Coord3D *p)
 {
   double result = sqrt((p->x * p->x) + (p->y * p->y) + (p->z * p->z));
-  //double result = p->z;
+  return result;
+}
+
+// Task B: This function receives the coordinates of two points (passed as pointers), and returns the pointer of the point that is farther away from the origin.
+Coord3D * fartherFromOrigin(Coord3D *p1, Coord3D *p2)
+{
+  Coord3D * result;
+  if(length(p1) > length(p2))
+  {
+    result = p1;
+  }
+  else
+  {
+    result = p2;
+  }
   return result;
 }
