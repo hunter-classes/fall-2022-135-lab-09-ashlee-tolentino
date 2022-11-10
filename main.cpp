@@ -33,6 +33,17 @@ int main()
   std::cout << "---------------------------------------\n";
 
   // Task C
+  Coord3D pos = {0, 0, 100.0};
+  Coord3D vel = {1, -5, 0.2};
+
+  move(&pos, &vel, 2.0); // object pos gets changed
+  std::cout << "Task C\n\n" << pos.x << " " << pos.y << " " << pos.z << std::endl;
+  // prints: 2 -10 100.4
+  std::cout << "---------------------------------------\n";
+
+  // Task D
+  
+
 
   
   return 0;
