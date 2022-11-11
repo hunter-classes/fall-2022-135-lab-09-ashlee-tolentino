@@ -4,7 +4,7 @@ Course: CSCI-135
 Instructor: Michael Zamansky
 Assignment: Lab9
 
-This program...
+This program works with pointer variables and dynamic memory allocation.
 */
 
 #include <iostream>
