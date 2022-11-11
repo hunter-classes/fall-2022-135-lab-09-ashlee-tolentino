@@ -41,10 +41,23 @@ int main()
   // prints: 2 -10 100.4
   std::cout << "---------------------------------------\n";
 
-  // Task D
-  
+  // Task E
+  double x = 10;
+  double y = 20;
+  double z = 30;
+  Coord3D *ppos = createCoord3D(x,y,z);
+    
+  double a = 5.5;
+  double b = -1.4;
+  double c = 7.77;
+  Coord3D *pvel = createCoord3D(a,b,c);
 
+  move(ppos, pvel, 10.0);
 
+  std::cout << "Task E\n\nCoordinates after 10 seconds: " << (*ppos).x << " " << (*ppos).y << " " << (*ppos).z << std::endl;
   
+  deleteCoord3D(ppos); // release memory
+  deleteCoord3D(pvel);
+
   return 0;
 }
